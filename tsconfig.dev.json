@@ -1,0 +1,14 @@
+{
+    "extends": "./tsconfig.app.json",
+    "compilerOptions": {
+        "paths": {
+            "@sudao-wchl/plugin-core/*": [
+                "./lib/*"
+            ]
+        }
+    },
+    "include": [
+        "lib",
+        "src"
+    ]
+}
