@@ -25,7 +25,7 @@ export default defineConfig({
       formats: ['es'],
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'react/jsx-runtime'],
+      external: ['react', 'react-dom', 'react/jsx-runtime', 'react-router-dom', '@dfinity/agent', '@dfinity/candid', '@dfinity/principal'],
       input: rollupInputs,
       output: {
         assetFileNames: 'assets/[name][extname]',
@@ -34,6 +34,7 @@ export default defineConfig({
           react: 'React',
           'react-dom': 'ReactDOM',
           'react/jsx-runtime': 'react/jsx-runtime',
+          'react-router-dom': 'react-router-dom',
         }
       }
     }

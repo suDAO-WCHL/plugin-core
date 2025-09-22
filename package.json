@@ -1,7 +1,7 @@
 {
   "name": "@sudao-wchl/plugin-core",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Core package to develop plugin for suDAO",
   "type": "module",
   "exports": {
@@ -13,6 +13,9 @@
     },
     "./hooks": {
       "import": "./dist/hooks/index.js"
+    },
+    "./registry": {
+      "import": "./dist/registry/index.js"
     }
   },
   "files": [
@@ -26,22 +29,23 @@
     "preview": "vite preview"
   },
   "peerDependencies": {
+    "@icp-sdk/core": "^4.0.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.9.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
     "@types/node": "^24.5.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
+    "@types/react-router-dom": "^5.3.3",
     "@vitejs/plugin-react-swc": "^4.0.0",
     "eslint": "^9.33.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "glob": "^11.0.3",
     "globals": "^16.3.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.39.1",
     "vite": "^7.1.2",
